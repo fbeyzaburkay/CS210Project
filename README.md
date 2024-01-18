@@ -2,6 +2,8 @@
 
 This Python project analyzes my music data from Spotify using unsupervised machine learning and creates a personalized playlist based on user mood input and genre preferences input.
 
+<img width="1028" alt="Screenshot 2024-01-18 at 20 39 31" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/402dbe00-6e0e-479c-b05c-24f348cda183">
+
 ## Overview
 
 The project involves the following key steps:
@@ -43,6 +45,9 @@ The project involves the following key steps:
 
 ![Unknown-2](https://github.com/fbeyzaburkay/cs210/assets/122027354/af592398-301e-44d8-a474-b0281c988510)
 
-##Sample Playlist
+## Sample of Generated Playlist
+
+<img width="847" alt="Screenshot 2024-01-18 at 20 30 52" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/b809cf9a-34b7-490c-b66e-dde9f038c082">
+
 
 
