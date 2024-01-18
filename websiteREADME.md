@@ -40,8 +40,17 @@ The project involves the following key steps:
 *Elbow Plots of SSE and Explained Variance*
 <img width="887" alt="Screenshot 2024-01-18 at 19 57 22" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/7fb0242f-c287-4ea8-b5a4-781a852a65ec">
 
-4. **Feature Engineering and Playlist Generation:**
+
+4. **Feature Engineering and Visualization:**
   - Created a new User Mood column by taking weighted averages of Valence, Energy and Loudness.
+  -  Visualized the distribution of music features and genres within each cluster. Each cluster shows different values for music features, showing the distinction amongst clusters.
+
+
+ *Subplots for Cluster Analysis*
+![Unknown-2](https://github.com/fbeyzaburkay/cs210/assets/122027354/af592398-301e-44d8-a474-b0281c988510)
+
+
+5. **Playlist Generation:**
   - Took user mood input within a 0.5 range and retrieves corresponding music clusters.
    - Allowed users to select preferred genres.
    - Generated a playlist from the selected clusters and genres.
@@ -49,23 +58,16 @@ The project involves the following key steps:
 *Sample of Generated Playlist by User Mood and Genre Preference*
      <img width="847" alt="Screenshot 2024-01-18 at 20 30 52" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/b809cf9a-34b7-490c-b66e-dde9f038c082">
 
-5. **Visualization:**
-  - Visualized the distribution of music features and genres within each cluster. Each cluster shows different values for music features, showing the distinction amongst clusters.
-
-    *Subplots for Cluster Analysis*
-![Unknown-2](https://github.com/fbeyzaburkay/cs210/assets/122027354/af592398-301e-44d8-a474-b0281c988510)
-
 ## Findings
 
+1. **Pop and Rock Trends:**
+   - High User Mood for Pop and Rock: Most of my Pop and Rock songs exhibit high User Mood indexes, suggesting a preference for uplifting or energetic tracks.
 
-## Sample of Generated Playlist
+2. **Electronic, Progressive Rock, and House Trends:**
+   - Low User Mood Index: Surprisingly, Electronic, Progressive Rock, and House songs tend to have lower User Mood indexes. This finding suggests a potential inclination towards genres that may have a more subdued or varied emotional tone, also may caused by the subtext of the song lyrics.
 
-# Get user input
-user_name = input("Enter your name: ")
-
-# Print a personalized greeting
-print(f"Hello, {user_name}! Welcome to the project.")
-
+## Limitations and Future Work
+In the future, I aim to enhance the project by integrating the `get.recommendations()` function from Spotipy authorization, enabling the generation of personalized song recommendations based on the User Mood formula derived from Valence, Energy, and Loudness features. This planned enhancement will offer an enriched music exploration experience, allowing for the discovery of new and fitting songs within the defined mood and genre preferences.
 
 
 ## Navigate to the Playlist Generator
