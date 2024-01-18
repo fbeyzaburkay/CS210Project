@@ -1,6 +1,6 @@
 # Music Playlist Generator
 
-This Python project analyzes music data using machine learning techniques and creates a personalized playlist based on user mood and genre preferences.
+This Python project analyzes my music data from Spotify using unsupervised machine learning and creates a personalized playlist based on user mood input and genre preferences input.
 
 ## Overview
 
@@ -24,17 +24,11 @@ The project involves the following key steps:
 
 ## Dependencies
 
-- Python 3.x
-- Required Python libraries: pandas, seaborn, matplotlib, scikit-learn
+- Python 3.8.12
+- Required Python libraries: [pandas](https://pandas.pydata.org), [seaborn](https://seaborn.pydata.org), [matplotlib](https://matplotlib.org), [scikit-learn](https://scikit-learn.org/stable/), [spotipy](https://spotipy.readthedocs.io), [statsmodels](https://www.statsmodels.org/stable/index.html), [scipy](https://scipy.org)
 
-## Getting Started
 
-1. **Clone the Repository:**
-   # Clone the Repository
-git clone https://github.com/fbeyzaburkay/cs210.git
-cd cs210
-
-# Navigate to the Playlist Generator
-cd "CS210 Spotify playlist generator by mood.py"
+## Navigate to the Playlist Generator
+[Link to My Project🖇️](https://github.com/fbeyzaburkay/cs210/blob/main/CS210%20Spotify%20playlist%20generator%20by%20mood.ipynb)
 
 
