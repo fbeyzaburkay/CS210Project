@@ -49,5 +49,11 @@ The project involves the following key steps:
 
 <img width="847" alt="Screenshot 2024-01-18 at 20 30 52" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/b809cf9a-34b7-490c-b66e-dde9f038c082">
 
+## Acknowledgements
 
+- Special thanks to [Spotipy](https://spotipy.readthedocs.io/) for providing a Python library to access the Spotify Web API.
+- The dataset used in this project was self-extracted using Spotipy, a Python library for the Spotify Web API.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
