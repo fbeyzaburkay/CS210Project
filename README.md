@@ -34,3 +34,5 @@ The project involves the following key steps:
    git clone https://github.com/fbeyzaburkay/cs210.git
    cd cs210
 
+   cd "CS210 Spotify playlist generator by mood.py"
+
