@@ -1,26 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Data Science Project</title>
+    <title>Spotify Playlist Generator by User Mood</title>
 </head>
+
 <body>
-    <h1>Welcome to My Data Science Project</h1>
-    
-    <!-- Include the content of websiteREADME.md here -->
-    <div id="readme-content"></div>
 
-    <script>
-        // Fetch and display the content of websiteREADME.md
-        fetch('https://raw.githubusercontent.com/fbeyzaburkay/cs210/main/websiteREADME.md')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('readme-content').innerHTML = marked(data);
-            });
-    </script>
+    <h1>Spotify Playlist Generator by User Mood</h1>
 
-    <!-- You can use a library like marked.js for rendering Markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <p>This Python project analyzes my music data from Spotify using unsupervised machine learning and creates a personalized playlist based on user mood input and genre preferences input.</p>
+
+    <img width="1028" alt="Screenshot 2024-01-18 at 20 39 31"
+        src="https://github.com/fbeyzaburkay/cs210/assets/122027354/402dbe00-6e0e-479c-b05c-24f348cda183">
+
+    <h2>Motivation</h2>
+    <p>The motivation behind this project stems from my desire to explore the intersection of data science and music,
+        leveraging Spotify's API to analyze and understand musical preferences based on the user's mood and preferred
+        genre.</p>
+
+    <h2>Data Source</h2>
+    <p>The dataset utilized in this project was personally extracted using Spotipy, a Python library enabling access to
+        the Spotify Web API.</p>
+
+    <h2>Data Analysis Steps:</h2>
+
+    <h3>1. Data Extraction and Preprocessing:</h3>
+    <ul>
+        <li>Extracted detailed information about tracks from multiple of my Spotify playlists using Spotipy with my
+            Spotify API credentials.</li>
+        <li>Extracted track details from Spotify playlists, stores the data in a 'proj.csv' CSV file, and assigns each
+            track a 'Main Genre' based on predefined conditions related to the 'Genres' column.</li>
+    </ul>
+
+    <h3>2. EDA and Hypothesis Testing:</h3>
+    <ul>
+        <li>Utilized pandas and seaborn for exploring and visualizing the dataset. Created heatmaps for showing the
+            correlations of features. Subplots for easily exploring the dataset.</li>
+        <li>Implemented hypothesis testing and regression analysis to understand the relationship between music features
+            and showed significance in relationship.</li>
+    </ul>
+
+    <h4>Correlation Heatmap</h4>
+    <img src="https://github.com/fbeyzaburkay/cs210/assets/122027354/7402d6ce-0d77-4de8-b99b-490f35adf046"
+        alt="Correlation Heatmap">
+
+    <h4>EDA Subplots</h4>
+    <img src="https://github.com/fbeyzaburkay/cs210/assets/122027354/9b46bcfb-3108-4cf7-8ca7-a32d4059cec7"
+        alt="EDA Subplots">
+
+    <h3>3. Cluster Analysis:</h3>
+    <ul>
+        <li>Applied K-Means clustering to group songs based on features like Valence, Energy, and Loudness.</li>
+        <li>Evaluated cluster quality using silhouette analysis and elbow plots and decided on using k=5 clusters.</li>
+    </ul>
+
+    <h4>Silhouette Plots</h4>
+    <img src="https://github.com/fbeyzaburkay/cs210/assets/122027354/ea4ecc8d-05a4-4bb1-821e-1f8e69f498f7"
+        alt="Silhouette Plots">
+
+    <h4>Elbow Plots of SSE and Explained Variance</h4>
+    <img src="https://github.com/fbeyzaburkay/cs210/assets/122027354/7fb0242f-c287-4ea8-b5a4-781a852a65ec"
+        alt="Elbow Plots of SSE and Explained Variance">
+
+    <h3>4. Feature Engineering and Visualization:</h3>
+    <ul>
+        <li>Created a new User Mood column by taking weighted averages of Valence, Energy, and Loudness.</li>
+        <li>Visualized the distribution of music features and genres within each cluster. Each cluster shows different
+            values for music features, showing the distinction amongst clusters.</li>
+    </ul>
+
+    <h4>Subplots for Cluster Analysis</h4>
+    <img src="https://github.com/fbeyzaburkay/cs210/assets/122027354/af592398-301e-44d8-a474-b0281c988510"
+        alt="Subplots for Cluster Analysis">
+
+    <h3>5. Playlist Generation:</h3>
+    <ul>
+        <li>Took user mood input within a 0.5 range and retrieves corresponding music clusters.</li>
+        <li>Allowed users to select preferred genres.</li>
+        <li>Generated a playlist from the selected clusters and genres.</li>
+    </ul>
+
+    <h4>Sample of Generated Playlist by User Mood and Genre Preference</h4>
+    <img src="https://github.com/fbeyzaburkay/cs210/assets/122027354/b809cf9a-34b7-490c-b66e-dde9f038c082"
+        alt="Sample of Generated Playlist by User Mood and Genre Preference">
+
+    <h2>Findings</h2>
+
+    <h3>1. Pop and Rock Trends:</h3>
+    <p>High User Mood for Pop and Rock: Most of my Pop and Rock songs exhibit high User Mood indexes, suggesting a
+        preference for uplifting or energetic tracks.</p>
+
+    <h3>2. Electronic, Progressive Rock, and House Trends:</h3>
+    <p>Low User Mood Index: Surprisingly, Electronic, Progressive Rock, and House songs tend to have lower User Mood
+        indexes. This finding suggests a potential inclination towards genres that may have a more subdued or varied
+        emotional tone, also may be caused by the subtext of the song lyrics.</p>
+
+    <h2>Limitations and Future Work</h2>
+    <p>In the future, I aim to enhance the project by integrating the `get.recommendations()` function from Spotipy
+        authorization, enabling the generation of personalized song recommendations based on the User Mood formula derived
+        from Valence, Energy, and Loudness features. This planned enhancement will offer an enriched music exploration
+        experience, allowing for the discovery of new and fitting songs within the defined mood and genre
+        preferences.</p>
+
+    <h2>Navigate to the Playlist Generator</h2>
+    <p><a href="https://github.com/fbeyzaburkay/cs210/blob/main/CS210%20Spotify%20playlist%20generator%20by%20mood.ipynb">Link
+            to My Project🖇️</a></p>
+
 </body>
+
 </html>
