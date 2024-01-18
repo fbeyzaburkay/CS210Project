@@ -30,7 +30,7 @@ The project involves the following key steps:
 ## Getting Started
 
 1. **Clone the Repository:**
-   ```bash
+   
    git clone https://github.com/fbeyzaburkay/cs210.git
    cd cs210
 
