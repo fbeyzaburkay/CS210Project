@@ -1,1 +1,26 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Data Science Project</title>
+</head>
+<body>
+    <h1>Welcome to My Data Science Project</h1>
+    <!-- Include the content of websiteREADME.md here -->
+    <div id="readme-content"></div>
+   
+    <script>
+        // Fetch and display the content of websiteREADME.md
+        fetch('https://raw.githubusercontent.com/fbeyzaburkay/cs210/main/websiteREADME.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('readme-content').innerHTML = text;
+            });
+    </script>
+</body>
+</html>
 
