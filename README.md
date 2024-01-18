@@ -31,7 +31,8 @@ The project involves the following key steps:
 ## Navigate to the Playlist Generator
 [Link to My Project🖇️](https://github.com/fbeyzaburkay/cs210/blob/main/CS210%20Spotify%20playlist%20generator%20by%20mood.ipynb)
 
-##EDA And Visualizations
+## EDA And Visualizations
+
 <img width="557" alt="Screenshot 2024-01-18 at 19 56 40" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/7402d6ce-0d77-4de8-b99b-490f35adf046">
 ![Unknown](https://github.com/fbeyzaburkay/cs210/assets/122027354/9b46bcfb-3108-4cf7-8ca7-a32d4059cec7)
 <img width="1028" alt="Screenshot 2024-01-18 at 19 57 07" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/ea4ecc8d-05a4-4bb1-821e-1f8e69f498f7">
