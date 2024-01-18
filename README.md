@@ -30,9 +30,11 @@ The project involves the following key steps:
 ## Getting Started
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/fbeyzaburkay/cs210.git
-   cd cs210
+   # Clone the Repository
+git clone https://github.com/fbeyzaburkay/cs210.git
+cd cs210
 
-   cd "CS210 Spotify playlist generator by mood.py"
+# Navigate to the Playlist Generator
+cd "CS210 Spotify playlist generator by mood.py"
+
 
