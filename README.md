@@ -52,7 +52,7 @@ The project involves the following key steps:
 ## Acknowledgements
 
 - Special thanks to [Spotipy](https://spotipy.readthedocs.io/) for providing a Python library to access the Spotify Web API.
-- The dataset used in this project was self-extracted using Spotipy, a Python library for the Spotify Web API.
+- The dataset used in this project was self-extracted using Spotipy.
 
 ## License
 
