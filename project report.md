@@ -60,14 +60,14 @@ The project involves the following key steps:
 
 ## Findings
 
-1. **Pop and Rock Trends:**
-   - High User Mood for Pop and Rock: Most of my Pop and Rock songs exhibit high User Mood indexes, suggesting a preference for uplifting or energetic tracks.
+1. ** High User Mood Index::**
+   - Most of my Pop and Rock songs exhibit high User Mood indexes, suggesting a preference for uplifting or energetic tracks.
 
-2. **Electronic, Progressive Rock, and House Trends:**
-   - Low User Mood Index: Surprisingly, Electronic, Progressive Rock, and House songs tend to have lower User Mood indexes. This finding suggests a potential inclination towards genres that may have a more subdued or varied emotional tone, also may caused by the subtext of the song lyrics.
+2. **Low User Mood Index:**
+   - Surprisingly, Electronic, Progressive Rock, and House songs tend to have lower User Mood indexes. This finding suggests a potential inclination towards genres that may have a more subdued or varied emotional tone, also may caused by the subtext of the song lyrics.
 
 ## Limitations and Future Work
-In the future, I aim to enhance the project by integrating the `get.recommendations()` function from Spotipy authorization, enabling the generation of personalized song recommendations based on the User Mood formula derived from Valence, Energy, and Loudness features. This planned enhancement will offer an enriched music exploration experience, allowing for the discovery of new and fitting songs within the defined mood and genre preferences.
+In the future, I aim to improve the project by incorporating the `get.recommendations()` function from Spotipy authorization. Despite my current efforts, I encountered challenges in achieving this in Python. My future plans involve overcoming these obstacles and successfully implementing the function, providing users with personalized song recommendations based on the User Mood formula derived from Valence, Energy, and Loudness features. This enhancement aims to offer an enhanced music exploration experience, allowing users to discover new songs tailored to their mood and genre preferences.
 
 
 ## Navigate to the Playlist Generator
