@@ -4,6 +4,9 @@ This Python project analyzes my music data from Spotify using unsupervised machi
 
 <img width="1028" alt="Screenshot 2024-01-18 at 20 39 31" src="https://github.com/fbeyzaburkay/cs210/assets/122027354/402dbe00-6e0e-479c-b05c-24f348cda183">
 
+## Presentation Link is below👇
+[CS210 Term Project Presentation](https://fbeyzaburkay.github.io/CS210_Project/)
+
 ## Overview
 
 The project involves the following key steps:
