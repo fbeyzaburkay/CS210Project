@@ -1,4 +1,4 @@
-# Spotify Playlist Generator by Mood
+# Spotify Playlist Generator by User Mood
 
 This Python project analyzes my music data from Spotify using unsupervised machine learning and creates a personalized playlist based on user mood input and genre preferences input.
 
